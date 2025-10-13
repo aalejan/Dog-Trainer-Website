@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skill Tree K9 — Modern, Humane Dog Training</title>
+  <meta name="description" content="Modern, humane dog training for puppies and adult dogs. Private lessons, behavior consults, and day training." />
+
+  <!-- EmailJS config (public) -->
+  <meta name="emailjs-public-key" content="40sMmwVdSPDFpITax" />
+  <meta name="emailjs-service-id" content="service_m10kz05" />
+  <meta name="emailjs-template-id" content="template_h20vg4r" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: { brand: { DEFAULT: '#0ea5e9', dark: '#0284c7' } },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <!-- ====== Nav ====== -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/60 bg-white/80 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between py-3">
+        <a href="#top" class="flex items-center gap-2 font-extrabold tracking-tight">
+          <img src="StevenLogo.jpg" alt="Skill Tree K9 Logo" class="h-20 w-auto" />
+          <span>Skill Tree K9</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 font-semibold">
+          <a href="#services" class="hover:text-brand">Services</a>
+          <a href="#pricing" class="hover:text-brand">Pricing</a>
+          <a href="#about" class="hover:text-brand">About</a>
+          <a href="#faq" class="hover:text-brand">FAQ</a>
+          <a href="#contact" class="px-3 py-2 rounded-lg bg-brand text-white hover:bg-brand-dark">Book Consult</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden pb-4">
+        <div class="grid gap-2 font-semibold">
+          <a href="#services" class="py-2">Services</a>
+          <a href="#pricing" class="py-2">Pricing</a>
+          <a href="#about" class="py-2">About</a>
+          <a href="#faq" class="py-2">FAQ</a>
+          <a href="#contact" class="py-2 px-3 rounded-lg bg-brand text-white w-max">Book Consult</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== Hero ====== -->
+  <section id="top" class="bg-gradient-to-b from-sky-50 to-white">
+    <div class="max-w-6xl mx-auto px-4 py-16 lg:py-24 grid lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="uppercase tracking-[.12em] text-brand font-extrabold">Modern • Humane • Results</p>
+        <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight mt-2">Help your dog feel calm, confident, and connected.</h1>
+        <p class="mt-4 text-slate-600 max-w-prose">Training that builds trust and clarity so dogs can make better choices in real life—at home, on walks, and everywhere in between.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-xl bg-brand text-white font-bold hover:bg-brand-dark">Start with an Intake</a>
+          <a href="#services" class="px-5 py-3 rounded-xl border border-slate-300 font-bold hover:border-brand hover:text-brand">See Services</a>
+        </div>
+        <ul class="mt-6 grid sm:grid-cols-3 gap-3 text-sm text-slate-700">
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Respect-based methods</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Structure & clear communication</li>
+          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Confidence & resilience</li>
+        </ul>
+      </div>
+      <figure class="rounded-2xl border border-slate-200 overflow-hidden bg-black/5">
+        <img src="Photo1.jpg" alt="Trainer kneeling with two dogs at the park; one dog using a mobility cart" class="w-full h-full object-cover" loading="eager" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ====== Services ====== -->
+  <section id="services" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-extrabold">Services</h2>
+      <p class="text-slate-600 mt-2">Flexible options to fit your dog and lifestyle.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <article class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <h3 class="text-xl font-extrabold">Private Lessons</h3>
+          <p class="mt-2 text-slate-600">1:1 coaching in your home or neighborhood. Great for puppies, manners, and everyday skills.</p>
+          <p class="mt-4 font-extrabold">$120 / 60 min</p>
+        </article>
+        <article class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <h3 class="text-xl font-extrabold">Day Training</h3>
+          <p class="mt-2 text-slate-600">Trainer works directly with your dog; you receive clear transfer sessions and homework.</p>
+          <p class="mt-4 font-extrabold">Packages from $600</p>
+        </article>
+        <article class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <h3 class="text-xl font-extrabold">Behavior Consults</h3>
+          <p class="mt-2 text-slate-600">Reactivity, fear, over-arousal, and more—plans that teach skills instead of suppressing behavior.</p>
+          <p class="mt-4 font-extrabold">$180 / 90 min</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Pricing ====== -->
+  <section id="pricing" class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-extrabold">Training Programs</h2>
+      <p class="text-slate-600 mt-2">Choose the plan that fits your goals. Most clients pick the middle option!</p>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white flex flex-col">
+          <h3 class="text-xl font-extrabold">Single Session</h3>
+          <p class="text-slate-600 mt-2">One 60-minute private lesson.</p>
+          <p class="mt-4 text-2xl font-extrabold">$150</p>
+          <span class="mt-2 text-sm text-slate-500">Good</span>
+        </div>
+        <div class="p-6 rounded-2xl border-2 border-brand bg-white shadow-lg flex flex-col">
+          <h3 class="text-xl font-extrabold text-brand">6 Weeks</h3>
+          <p class="text-slate-600 mt-2">Six weeks of structured training with accountability.</p>
+          <p class="mt-4 text-2xl font-extrabold">$800</p>
+          <span class="mt-2 text-sm text-brand font-semibold">Better / Most Popular</span>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white flex flex-col">
+          <h3 class="text-xl font-extrabold">8 Weeks</h3>
+          <p class="text-slate-600 mt-2">Eight weeks for deeper behavior change and lasting results.</p>
+          <p class="mt-4 text-2xl font-extrabold">$1,020</p>
+          <span class="mt-2 text-sm text-slate-500">Best / Premium</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== About ====== -->
+  <section id="about" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
+      <img src="Photo2.jpg" alt="Trainer walking three dogs on-leash near an office park" class="rounded-2xl border border-slate-200" loading="lazy" />
+      <div>
+        <h2 class="text-3xl font-extrabold">About the Trainer</h2>
+        <p class="text-slate-600 mt-2">
+          At Skill Tree K9, training is built on respect, clarity, and relationship. The focus is on helping dogs feel safe,
+          understood, and empowered to make better choices in everyday life.
+        </p>
+        <p class="text-slate-600 mt-4">
+          Programs emphasize structure, clear communication, and positive reinforcement—foundations that guide dogs to develop
+          calmness, confidence, and resilience. Rather than suppressing behavior, the goal is to teach practical skills and create
+          a shared language between dog and human.
+        </p>
+        <ul class="mt-4 space-y-2 text-slate-700">
+          <li>• Positive, evidence-based methods</li>
+          <li>• Clarity and structure that set dogs up for success</li>
+          <li>• Focus on trust, safety, and long-term results</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section id="faq" class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-extrabold">FAQ</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <details class="p-6 rounded-2xl border border-slate-200 bg-white" open>
+          <summary class="font-extrabold cursor-pointer">Which areas do you serve?</summary>
+          <p class="mt-2 text-slate-600">Greater <em>Your City</em> area. Virtual coaching is available anywhere.</p>
+        </details>
+        <details class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <summary class="font-extrabold cursor-pointer">Do you use punishment tools?</summary>
+          <p class="mt-2 text-slate-600">No. We rely on humane, evidence-based approaches that avoid fear and pain.</p>
+        </details>
+        <details class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <summary class="font-extrabold cursor-pointer">Can kids join sessions?</summary>
+          <p class="mt-2 text-slate-600">Absolutely—training is a family project! We keep things safe and fun.</p>
+        </details>
+        <details class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <summary class="font-extrabold cursor-pointer">What’s your cancellation policy?</summary>
+          <p class="mt-2 text-slate-600">48-hour notice to reschedule. No-shows may be charged in full.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Contact / Intake (EmailJS) ====== -->
+  <section id="contact" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-extrabold">New Client Intake</h2>
+      <p class="text-slate-600 mt-2">Tell me about your dog and goals. I’ll respond within 1–2 business days.</p>
+
+      <div id="formSuccess" class="hidden mt-6 p-4 rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-800">Thanks! Your intake form was sent.</div>
+      <div id="formError" class="hidden mt-6 p-4 rounded-xl border border-rose-200 bg-rose-50 text-rose-800">Something went wrong. Please try again or email <a href="mailto:trainer@example.com" class="underline">trainer@example.com</a>.</div>
+
+      <form id="intakeForm" class="mt-8 grid md:grid-cols-2 gap-6 bg-white p-6 rounded-2xl border border-slate-200" enctype="multipart/form-data">
+        <!-- Contact info -->
+        <div class="grid gap-4">
+          <div>
+            <label class="block text-sm font-semibold">Your name*</label>
+            <input required type="text" name="client_name" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-semibold">Email*</label>
+              <input required type="email" name="email" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold">Phone*</label>
+              <input required type="tel" name="phone" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold">City</label>
+            <input type="text" name="city" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold">Preferred contact</label>
+            <select name="preferred_contact" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2">
+              <option>Phone</option>
+              <option>Email</option>
+              <option>Text</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dog info -->
+        <div class="grid gap-4">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-semibold">Dog’s name*</label>
+              <input required type="text" name="dog_name" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold">Breed / mix</label>
+              <input type="text" name="breed" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-semibold">Age</label>
+              <input type="text" name="age" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold">Sex</label>
+              <select name="sex" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Unknown</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold">Primary goals*</label>
+            <textarea required name="goals" rows="4" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="e.g., leash reactivity, puppy biting, recall, jumping..."></textarea>
+          </div>
+        </div>
+
+        <!-- Full-width extras -->
+        <div class="md:col-span-2 grid gap-4">
+          <fieldset class="grid gap-2">
+            <legend class="text-sm font-semibold">What behaviors are you seeing? (check all that apply)</legend>
+            <div class="grid md:grid-cols-3 gap-2 text-sm">
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Puppy basics"/>Puppy basics</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Leash pulling"/>Leash pulling</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Jumping"/>Jumping</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Reactivity"/>Reactivity</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Fear/anxiety"/>Fear / anxiety</label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Resource guarding"/>Resource guarding</label>
+            </div>
+          </fieldset>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-semibold">Service interest</label>
+              <select name="service_interest" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2">
+                <option>Private lessons</option>
+                <option>Day training</option>
+                <option>Behavior consult</option>
+                <option>Unsure—please advise</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold">Availability</label>
+              <input type="text" name="availability" placeholder="e.g., Weeknights, Saturdays" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold">Anything else I should know?</label>
+            <textarea name="notes" rows="3" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2"></textarea>
+          </div>
+
+          <!-- <div class="grid md:grid-cols-2 gap-4 items-center">
+            <div>
+              <label class="block text-sm font-semibold">Optional: vet records or photo</label>
+              <input type="file" name="attachment" class="mt-1 block w-full text-sm" />
+            </div>
+            <label class="inline-flex items-center gap-2 text-sm"><input required type="checkbox" name="consent" /> I consent to be contacted about my inquiry.</label>
+          </div> -->
+
+          <!-- Anti-spam -->
+          <input type="text" name="_gotcha" class="hidden" aria-hidden="true" />
+          <input type="hidden" name="_ts" id="ts" />
+          <input type="hidden" name="_subject" value="New Client Intake" />
+
+          <div class="flex gap-3 items-center">
+            <button id="submitBtn" class="px-5 py-3 rounded-xl bg-brand text-white font-bold hover:bg-brand-dark" type="submit">Send Intake</button>
+            <p class="text-xs text-slate-500">You’ll also get a confirmation email.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6 text-sm items-start">
+      <div>
+        <img src="StevenLogo.jpg" alt="Skill Tree K9 Logo" class="h-20 w-auto mb-2" />
+        <div class="font-extrabold">Skill Tree K9</div>
+        <p class="text-slate-600 mt-2">Positive, evidence-based dog training.</p>
+      </div>
+      <div>
+        <div class="font-extrabold">Contact</div>
+        <p class="text-slate-600 mt-2">salejandro@skilltree-k9.com<br/> (978) 696-1489</p>
+      </div>
+      <div>
+        <div class="font-extrabold">Follow</div>
+        <p class="text-slate-600 mt-2"><a href="https://www.instagram.com/_stee_jay/">Instagram</a> • <a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <div class="text-center text-xs text-slate-500 pb-8">© <span id="year"></span> Skill Tree K9. All rights reserved.</div>
+  </footer>
+
+  <!-- EmailJS browser SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Your app JS -->
+  <script src="app.js" defer></script>
+</body>
+</html>
