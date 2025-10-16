@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
   <url>
-    <loc>https://skilltree-k9.com/</loc>
+    <loc>https://www.skilltree-k9.com/</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+
+  
+    <!-- Logo -->
+    <image:image>
+      <image:loc>https://www.skilltree-k9.com/StevenLogo.jpg</image:loc>
+      <image:title>Skill Tree K9 Logo</image:title>
+    </image:image>
+
+    <!-- Hero background photo -->
+    <image:image>
+      <image:loc>https://www.skilltree-k9.com/stevenanddogs.jpeg</image:loc>
+      <image:title>Dog trainer working with dogs outdoors</image:title>
+      <image:caption>Leash skills and calm mindset training in real-life settings.</image:caption>
+    </image:image>
+
+    <!-- About section photo -->
+    <image:image>
+      <image:loc>https://www.skilltree-k9.com/Photo2.jpg</image:loc>
+      <image:title>Steven Alejandro training dogs</image:title>
+      <image:caption>Personalized dog training focused on trust and communication.</image:caption>
+    </image:image>
+
+  
   </url>
-  <url>
-    <loc>https://skilltree-k9.com/#about</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skilltree-k9.com/#pricing</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skilltree-k9.com/#contact</loc>
-    <priority>0.9</priority>
-  </url>
+
 </urlset>
