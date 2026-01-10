@@ -5,7 +5,44 @@
 // ---------- UI: Mobile menu & footer year ----------
 const btn = document.getElementById('menuBtn');
 const menu = document.getElementById('mobileMenu');
-btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+function toggleMobileMenu() {
+  if (!menu) return;
+
+  const isHidden = menu.classList.contains('hidden');
+
+  if (isHidden) {
+    // Opening
+    menu.classList.remove('hidden');
+    // Trigger animation after removing hidden
+    setTimeout(() => {
+      menu.classList.remove('max-h-0', 'opacity-0');
+      menu.classList.add('max-h-96', 'opacity-100');
+    }, 10);
+  } else {
+    // Closing
+    menu.classList.remove('max-h-96', 'opacity-100');
+    menu.classList.add('max-h-0', 'opacity-0');
+    // Wait for animation to finish before hiding
+    setTimeout(() => {
+      menu.classList.add('hidden');
+    }, 300);
+  }
+}
+
+btn?.addEventListener('click', toggleMobileMenu);
+
+// Close mobile menu when a link is clicked
+const mobileLinks = menu?.querySelectorAll('a');
+mobileLinks?.forEach(link => {
+  link.addEventListener('click', () => {
+    menu?.classList.remove('max-h-96', 'opacity-100');
+    menu?.classList.add('max-h-0', 'opacity-0');
+    setTimeout(() => {
+      menu?.classList.add('hidden');
+    }, 300);
+  });
+});
 
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
@@ -15,6 +52,7 @@ const header = document.getElementById('siteHeader');
 const brandText = document.getElementById('brandText');
 const navLinks = document.querySelectorAll('.nav-link');
 const ctaBtn = document.getElementById('ctaBtn');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
 function setHeaderScrolled(scrolled) {
   if (!header || !ctaBtn) return;
@@ -29,8 +67,11 @@ function setHeaderScrolled(scrolled) {
     btn?.classList.remove('text-white','border-white/30');
     btn?.classList.add('text-slate-700','border-slate-300');
 
-    // mobile menu text color
-    menu?.classList.add('text-slate-900');
+    // mobile menu link colors
+    mobileMenuLinks.forEach(a => {
+      a.classList.remove('text-white');
+      a.classList.add('text-slate-900');
+    });
   } else {
     header.className = 'fixed inset-x-0 top-0 z-50 transition-all';
     if (brandText) brandText.className = 'text-white';
@@ -40,7 +81,11 @@ function setHeaderScrolled(scrolled) {
     btn?.classList.add('text-white','border-white/30');
     btn?.classList.remove('text-slate-700','border-slate-300');
 
-    menu?.classList.remove('text-slate-900');
+    // mobile menu link colors
+    mobileMenuLinks.forEach(a => {
+      a.classList.remove('text-slate-900');
+      a.classList.add('text-white');
+    });
   }
 }
 function handleScroll() { setHeaderScrolled(window.scrollY > 10); }
