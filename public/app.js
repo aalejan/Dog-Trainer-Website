@@ -17,11 +17,11 @@ const navLinks = document.querySelectorAll('.nav-link');
 const ctaBtn = document.getElementById('ctaBtn');
 
 function setHeaderScrolled(scrolled) {
-  if (!header || !brandText || !ctaBtn) return;
+  if (!header || !ctaBtn) return;
 
   if (scrolled) {
     header.className = 'fixed inset-x-0 top-0 z-50 transition-all bg-white/90 backdrop-blur border-b border-slate-200';
-    brandText.className = 'text-slate-900';
+    if (brandText) brandText.className = 'text-slate-900';
     navLinks.forEach(a => a.className = 'nav-link text-slate-900 hover:text-brand');
     ctaBtn.className = 'px-3 py-2 rounded-lg bg-brand text-white hover:bg-brand-dark';
 
@@ -33,7 +33,7 @@ function setHeaderScrolled(scrolled) {
     menu?.classList.add('text-slate-900');
   } else {
     header.className = 'fixed inset-x-0 top-0 z-50 transition-all';
-    brandText.className = 'text-white';
+    if (brandText) brandText.className = 'text-white';
     navLinks.forEach(a => a.className = 'nav-link text-white/90 hover:text-white');
     ctaBtn.className = 'px-3 py-2 rounded-lg bg-white/15 text-white backdrop-blur hover:bg-white/25 border border-white/20';
 
