@@ -52,7 +52,6 @@ const header = document.getElementById('siteHeader');
 const brandText = document.getElementById('brandText');
 const navLinks = document.querySelectorAll('.nav-link');
 const ctaBtn = document.getElementById('ctaBtn');
-const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
 function setHeaderScrolled(scrolled) {
   if (!header || !ctaBtn) return;
@@ -66,12 +65,6 @@ function setHeaderScrolled(scrolled) {
     // switch burger styles
     btn?.classList.remove('text-white','border-white/30');
     btn?.classList.add('text-slate-700','border-slate-300');
-
-    // mobile menu link colors
-    mobileMenuLinks.forEach(a => {
-      a.classList.remove('text-white');
-      a.classList.add('text-slate-900');
-    });
   } else {
     header.className = 'fixed inset-x-0 top-0 z-50 transition-all';
     if (brandText) brandText.className = 'text-white';
@@ -80,12 +73,6 @@ function setHeaderScrolled(scrolled) {
 
     btn?.classList.add('text-white','border-white/30');
     btn?.classList.remove('text-slate-700','border-slate-300');
-
-    // mobile menu link colors
-    mobileMenuLinks.forEach(a => {
-      a.classList.remove('text-slate-900');
-      a.classList.add('text-white');
-    });
   }
 }
 function handleScroll() { setHeaderScrolled(window.scrollY > 10); }
