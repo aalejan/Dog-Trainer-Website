@@ -153,7 +153,7 @@ form?.addEventListener('submit', async (e) => {
   }
 
   // Basic required fields
-  const required = ['client_name', 'email', 'dog_name', 'goals'];
+  const required = ['client_name', 'phone'];
   const missing = required.filter((name) => !form.elements[name] || !form.elements[name].value.trim());
   if (missing.length) {
     showError(`Missing: ${missing.join(', ')}`);
