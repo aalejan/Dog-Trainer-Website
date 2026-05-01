@@ -16,9 +16,8 @@
 <meta name="twitter:title" content="Dog Trainer in Fitchburg, MA | Skill Tree K9" />
 <meta name="twitter:description" content="Clear, customized training for real-life results." />
 <meta name="twitter:image" content="https://www.skilltree-k9.com/og/hero.jpg" />
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="icon" href="/SkilltreeDogLogo.png" type="image/png" />
+<link rel="apple-touch-icon" href="/SkilltreeDogLogo.png" />
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -93,13 +92,23 @@
     "name": "Which areas do you serve?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Based in Fitchburg, Massachusetts and serving Worcester County. Virtual coaching is available anywhere."
+      "text": "Based in Fitchburg, Massachusetts and serving Worcester County."
     }
   }
  ]
 }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18039091595">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18039091595');
+</script>
 
 </head>
 <body class="bg-white text-slate-900 antialiased">
@@ -114,6 +123,8 @@
       </a>
 
       <nav class="hidden md:flex items-center gap-6 font-semibold">
+        <a href="tel:978-233-8073" class="nav-link text-white/90 hover:text-white">(978) 233-8073</a>
+        <span class="text-white/30">|</span>
         <a href="#pricing" class="nav-link text-white/90 hover:text-white">Pricing</a>
         <a href="#about" class="nav-link text-white/90 hover:text-white">About</a>
         <a href="#faq" class="nav-link text-white/90 hover:text-white">FAQ</a>
@@ -130,6 +141,10 @@
     <!-- Mobile menu -->
     <div id="mobileMenu" class="md:hidden hidden pb-4 overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0 bg-white/95 backdrop-blur -mx-4 px-4 rounded-b-xl shadow-lg">
       <div class="grid gap-2 font-semibold pt-2">
+        <a href="tel:978-233-8073" class="py-2 mobile-menu-link text-slate-900 flex items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          (978) 233-8073
+        </a>
         <a href="#pricing" class="py-2 mobile-menu-link text-slate-900">Pricing</a>
         <a href="#about" class="py-2 mobile-menu-link text-slate-900">About</a>
         <a href="#faq" class="py-2 mobile-menu-link text-slate-900">FAQ</a>
@@ -283,7 +298,7 @@
 
         <div class="mt-8 flex justify-between items-baseline">
           <span class="font-bold">6-Session Package</span>
-          <span class="text-xl font-extrabold">$750</span>
+          <span class="text-xl font-extrabold">$600</span>
         </div>
 
         <a href="#contact" class="inline-block mt-8 px-5 py-3 rounded-xl bg-brand text-white font-bold hover:bg-brand-dark">Get Started</a>
@@ -291,33 +306,6 @@
     </div>
   </section>
 
-  <!-- ====== Virtual Coaching (text left, image right) ====== -->
-  <section id="virtual-coaching" class="grid lg:grid-cols-2 min-h-screen">
-    <div class="flex items-center bg-slate-50 px-8 py-16 lg:px-16">
-      <div class="max-w-lg mx-auto lg:mx-0 lg:ml-auto">
-        <h2 class="text-3xl font-extrabold uppercase tracking-wide">Virtual Coaching</h2>
-        <p class="text-slate-600 mt-4 text-lg leading-relaxed">Structured, professional guidance from home. Each week focuses on teaching you how to train your dog effectively, with clear steps, progress tracking, and real-time feedback.</p>
-
-        <ul class="mt-6 space-y-2 text-slate-700 text-lg">
-          <li>6 private virtual sessions (60 min each)</li>
-          <li>Weekly coaching and accountability</li>
-          <li>Customized training plan</li>
-          <li>Session recap and homework after each call</li>
-        </ul>
-
-        <div class="mt-8 flex justify-between items-baseline">
-          <span class="font-bold">6-Week Program</span>
-          <span class="text-xl font-extrabold">$400</span>
-        </div>
-        <p class="text-sm text-slate-500 mt-1">Once per week for 6 weeks. Available anywhere.</p>
-
-        <a href="#contact" class="inline-block mt-8 px-5 py-3 rounded-xl bg-brand text-white font-bold hover:bg-brand-dark">Get Started with Virtual Coaching</a>
-      </div>
-    </div>
-    <div class="relative min-h-[50vh] lg:min-h-0">
-      <img src="Stevenbutter.jpg" alt="Steven training with Buttercup outdoors" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-    </div>
-  </section>
 
   <!-- 8 Sessions (commented out — replacing with CGC prep)
   <div class="p-6 md:p-8 rounded-2xl border border-slate-200 bg-white flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
@@ -379,7 +367,6 @@ Hi, I’m Steven Alejandro, the owner of Skill Tree K-9. My journey into dog tra
           <summary class="font-extrabold cursor-pointer">Which areas do you serve?</summary>
           <p class="mt-2 text-slate-600">
             I’m based in <strong>Fitchburg, Massachusetts</strong> and serve <strong>Worcester County</strong> (surrounding towns welcome).
-            Virtual coaching is available anywhere.
           </p>
         </details>
 
@@ -401,123 +388,43 @@ Hi, I’m Steven Alejandro, the owner of Skill Tree K-9. My journey into dog tra
     </div>
   </section>
 
-  <!-- ====== Contact / Intake (EmailJS) ====== -->
+  <!-- ====== Contact ====== -->
   <section id="contact" class="py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-extrabold">New Client Intake</h2>
-      <p class="text-slate-600 mt-2">Tell me about your dog and goals. I’ll respond within 1–2 business days.</p>
+    <div class="max-w-2xl mx-auto px-4">
+      <h2 class="text-3xl font-extrabold">Get in Touch</h2>
+      <p class="text-slate-600 mt-2">Leave your info and I’ll give you a call to chat about your dog.</p>
 
       <!-- Alerts -->
-      <div id="formSuccess" class="hidden mt-6 p-4 rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-800">Thanks! Your intake form was sent.</div>
+      <div id="formSuccess" class="hidden mt-6 p-4 rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-800">Thanks! I’ll be in touch soon.</div>
       <div id="formError" class="hidden mt-6 p-4 rounded-xl border border-rose-200 bg-rose-50 text-rose-800">Something went wrong. Please try again or email <a href="mailto:salejandro@skilltree-k9.com" class="underline">salejandro@skilltree-k9.com</a>.</div>
 
-      <form id="intakeForm" class="mt-8 grid md:grid-cols-2 gap-6 bg-white p-6 rounded-2xl border border-slate-200" enctype="multipart/form-data">
-        <!-- Contact info -->
-        <div class="grid gap-4">
+      <form id="intakeForm" class="mt-8 grid gap-4 bg-white p-6 rounded-2xl border border-slate-200" enctype="multipart/form-data">
+        <div>
+          <label class="block text-sm font-semibold">Your name*</label>
+          <input required type="text" name="client_name" maxlength="120" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
           <div>
-            <label class="block text-sm font-semibold">Your name*</label>
-            <input required type="text" name="client_name" maxlength="120" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-          </div>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-semibold">Email*</label>
-              <input required type="email" name="email" maxlength="160" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-            </div>
-            <div>
-              <label class="block text-sm font-semibold">Phone*</label>
-              <input required type="tel" name="phone" maxlength="40" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-            </div>
+            <label class="block text-sm font-semibold">Phone*</label>
+            <input required type="tel" name="phone" maxlength="40" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
           </div>
           <div>
-            <label class="block text-sm font-semibold">City</label>
-            <input type="text" name="city" maxlength="120" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-          </div>
-          <div>
-            <label class="block text-sm font-semibold">Preferred contact</label>
-            <select name="preferred_contact" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2">
-              <option>Phone</option>
-              <option>Email</option>
-              <option>Text</option>
-            </select>
+            <label class="block text-sm font-semibold">Email</label>
+            <input type="email" name="email" maxlength="160" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
           </div>
         </div>
-
-        <!-- Dog info -->
-        <div class="grid gap-4">
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-semibold">Dog’s name*</label>
-              <input required type="text" name="dog_name" maxlength="120" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-            </div>
-            <div>
-              <label class="block text-sm font-semibold">Breed / mix</label>
-              <input type="text" name="breed" maxlength="160" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-            </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-semibold">Age</label>
-              <input type="text" name="age" maxlength="40" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-            </div>
-            <div>
-              <label class="block text-sm font-semibold">Sex</label>
-              <select name="sex" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2">
-                <option>Male</option>
-                <option>Female</option>
-                <option>Unknown</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label class="block text-sm font-semibold">Primary goals*</label>
-            <textarea required name="goals" rows="4" maxlength="2000" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="e.g., neutrality around dogs, calm in the home, loose-leash, recall, better greetings..."></textarea>
-          </div>
+        <div>
+          <label class="block text-sm font-semibold">Tell me a little about your dog</label>
+          <textarea name="goals" rows="3" maxlength="2000" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" placeholder="Name, breed, age, what you’re looking for help with..."></textarea>
         </div>
 
-        <!-- Full-width extras -->
-        <div class="md:col-span-2 grid gap-4">
-          <fieldset class="grid gap-2">
-            <legend class="text-sm font-semibold">What behaviors are you seeing? (check all that apply)</legend>
-            <div class="grid md:grid-cols-3 gap-2 text-sm">
-              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Puppy basics"/>Puppy basics</label>
-              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Leash pulling"/>Leash pulling</label>
-              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Jumping"/>Jumping</label>
-              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Reactivity"/>Reactivity</label>
-              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Over-arousal"/>Over-arousal</label>
-              <label class="inline-flex items-center gap-2"><input type="checkbox" name="issues" value="Resource guarding"/>Resource guarding</label>
-            </div>
-          </fieldset>
+        <!-- Anti-spam -->
+        <input type="text" name="_gotcha" class="hidden" aria-hidden="true" />
+        <input type="hidden" name="_ts" id="ts" />
+        <input type="hidden" name="_subject" value="New Client Inquiry" />
 
-          <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-semibold">Service interest</label>
-              <select name="service_interest" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2">
-                <option>Private lessons</option>
-                <option>CGC test prep</option>
-                <option>Virtual coaching</option>
-                <option>Unsure—please advise</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-sm font-semibold">Availability</label>
-              <input type="text" name="availability" maxlength="160" placeholder="e.g., Weeknights, Saturdays" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-sm font-semibold">Anything else I should know?</label>
-            <textarea name="notes" rows="3" maxlength="2000" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2"></textarea>
-          </div>
-
-          <!-- Anti-spam -->
-          <input type="text" name="_gotcha" class="hidden" aria-hidden="true" />
-          <input type="hidden" name="_ts" id="ts" />
-          <input type="hidden" name="_subject" value="New Client Intake" />
-
-          <div class="flex gap-3 items-center">
-            <button id="submitBtn" class="px-5 py-3 rounded-xl bg-brand text-white font-bold hover:bg-brand-dark" type="submit">Tell Me About Your Dog</button>
-            <!-- <p class="text-xs text-slate-500">You’ll also get a confirmation email.</p> -->
-          </div>
+        <div>
+          <button id="submitBtn" class="px-5 py-3 rounded-xl bg-brand text-white font-bold hover:bg-brand-dark" type="submit">Send</button>
         </div>
       </form>
     </div>
