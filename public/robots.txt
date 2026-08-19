@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://skilltree-k9.com/sitemap.xml
+
+Sitemap: https://www.skilltree-k9.com/sitemap.xml

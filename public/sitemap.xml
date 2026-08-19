@@ -1,37 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-  xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Homepage -->
   <url>
     <loc>https://www.skilltree-k9.com/</loc>
-    <lastmod>2025-10-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-08-19</lastmod>
 
-  
-    <!-- Logo -->
     <image:image>
-      <image:loc>https://www.skilltree-k9.com/StevenLogo.jpg</image:loc>
-      <image:title>Skill Tree K9 Logo</image:title>
+      <image:loc>https://www.skilltree-k9.com/hero-1920.jpg</image:loc>
+      <image:title>Dog trainer working with a dog on leash outdoors in Fitchburg, MA</image:title>
+      <image:caption>Leash skills and calm-mindset training in real-life settings.</image:caption>
     </image:image>
 
-    <!-- Hero background photo -->
     <image:image>
-      <image:loc>https://www.skilltree-k9.com/stevenanddogs.jpeg</image:loc>
-      <image:title>Dog trainer working with dogs outdoors</image:title>
-      <image:caption>Leash skills and calm mindset training in real-life settings.</image:caption>
+      <image:loc>https://www.skilltree-k9.com/about-steven-1400.jpg</image:loc>
+      <image:title>Steven Alejandro, Skill Tree K9 dog trainer</image:title>
+      <image:caption>Private dog training focused on trust and clear communication.</image:caption>
     </image:image>
 
-    <!-- About section photo -->
     <image:image>
-      <image:loc>https://www.skilltree-k9.com/Photo2.jpg</image:loc>
-      <image:title>Steven Alejandro training dogs</image:title>
-      <image:caption>Personalized dog training focused on trust and communication.</image:caption>
+      <image:loc>https://www.skilltree-k9.com/transformation-1200.jpg</image:loc>
+      <image:title>Dog owner walking calmly on a loose leash after training</image:title>
+      <image:caption>The Calm Companion Program builds everyday, real-life behavior.</image:caption>
     </image:image>
 
-  
   </url>
 
 </urlset>

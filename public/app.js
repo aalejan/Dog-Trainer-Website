@@ -30,7 +30,10 @@ function toggleMobileMenu() {
   }
 }
 
-btn?.addEventListener('click', toggleMobileMenu);
+btn?.addEventListener('click', () => {
+  toggleMobileMenu();
+  btn.setAttribute('aria-expanded', String(menu ? !menu.classList.contains('hidden') : false));
+});
 
 // Close mobile menu when a link is clicked
 const mobileLinks = menu?.querySelectorAll('a');
@@ -41,6 +44,7 @@ mobileLinks?.forEach(link => {
     setTimeout(() => {
       menu?.classList.add('hidden');
     }, 300);
+    btn?.setAttribute('aria-expanded', 'false');
   });
 });
 
@@ -49,31 +53,13 @@ if (year) year.textContent = new Date().getFullYear();
 
 // ---------- UI: Header style swap on scroll (nav over hero) ----------
 const header = document.getElementById('siteHeader');
-const brandText = document.getElementById('brandText');
-const navLinks = document.querySelectorAll('.nav-link');
-const ctaBtn = document.getElementById('ctaBtn');
 
+// The header sits transparent over the hero and settles into a night-blue bar on scroll.
+// The look lives in CSS (#siteHeader.is-scrolled) so it never waits on the Tailwind CDN
+// to generate classes that only ever appear at runtime.
 function setHeaderScrolled(scrolled) {
-  if (!header || !ctaBtn) return;
-
-  if (scrolled) {
-    header.className = 'fixed inset-x-0 top-0 z-50 transition-all bg-white/90 backdrop-blur border-b border-slate-200';
-    if (brandText) brandText.className = 'text-slate-900';
-    navLinks.forEach(a => a.className = 'nav-link text-slate-900 hover:text-brand');
-    ctaBtn.className = 'px-3 py-2 rounded-lg bg-brand text-white hover:bg-brand-dark';
-
-    // switch burger styles
-    btn?.classList.remove('text-white','border-white/30');
-    btn?.classList.add('text-slate-700','border-slate-300');
-  } else {
-    header.className = 'fixed inset-x-0 top-0 z-50 transition-all';
-    if (brandText) brandText.className = 'text-white';
-    navLinks.forEach(a => a.className = 'nav-link text-white/90 hover:text-white');
-    ctaBtn.className = 'px-3 py-2 rounded-lg bg-white/15 text-white backdrop-blur hover:bg-white/25 border border-white/20';
-
-    btn?.classList.add('text-white','border-white/30');
-    btn?.classList.remove('text-slate-700','border-slate-300');
-  }
+  if (!header) return;
+  header.classList.toggle('is-scrolled', scrolled);
 }
 function handleScroll() { setHeaderScrolled(window.scrollY > 10); }
 handleScroll();

@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+html { scroll-padding-top: 112px; }
+    @media (max-width: 768px) { html { scroll-padding-top: 96px; } }
+}
+
+/* Engraved serif for headings, Trajan-style caps for display accents — echoing the mark. */
+    h1, h2, h3, .font-heading {
+      font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.005em;
+      line-height: 1.12;
+    }
+    .font-display {
+      font-family: 'Cinzel', Georgia, serif !important;
+      letter-spacing: 0.16em;
+    }
+
+    /* Constellation texture used on every night-blue panel. */
+    .starfield {
+      background-image: url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='600'%20viewBox='0%200%20600%20600'><g%20fill='none'%20stroke='%23e3a93f'%20stroke-width='.7'%20opacity='.30'><path%20d=%22M60%2090L170%20150%22/><path%20d=%22M170%20150L300%2080%22/><path%20d=%22M300%2080L410%20170%22/><path%20d=%22M410%20170L520%20110%22/><path%20d=%22M170%20150L140%20300%22/><path%20d=%22M140%20300L260%20260%22/><path%20d=%22M260%20260L390%20330%22/><path%20d=%22M390%20330L500%20290%22/><path%20d=%22M500%20290L560%20430%22/><path%20d=%22M140%20300L80%20450%22/><path%20d=%22M80%20450L210%20520%22/><path%20d=%22M210%20520L340%20430%22/><path%20d=%22M340%20430L390%20330%22/><path%20d=%22M340%20430L470%20540%22/><path%20d=%22M470%20540L560%20430%22/><path%20d=%22M410%20170L390%20330%22/></g><g%20fill='%23f0c164'%20opacity='.55'><circle%20cx=%2260%22%20cy=%2290%22%20r=%221.9%22/><circle%20cx=%22170%22%20cy=%22150%22%20r=%221.9%22/><circle%20cx=%22300%22%20cy=%2280%22%20r=%221.9%22/><circle%20cx=%22410%22%20cy=%22170%22%20r=%221.9%22/><circle%20cx=%22520%22%20cy=%22110%22%20r=%221.9%22/><circle%20cx=%22140%22%20cy=%22300%22%20r=%221.9%22/><circle%20cx=%22260%22%20cy=%22260%22%20r=%221.9%22/><circle%20cx=%22390%22%20cy=%22330%22%20r=%221.9%22/><circle%20cx=%22500%22%20cy=%22290%22%20r=%221.9%22/><circle%20cx=%2280%22%20cy=%22450%22%20r=%221.9%22/><circle%20cx=%22210%22%20cy=%22520%22%20r=%221.9%22/><circle%20cx=%22340%22%20cy=%22430%22%20r=%221.9%22/><circle%20cx=%22470%22%20cy=%22540%22%20r=%221.9%22/><circle%20cx=%22560%22%20cy=%22430%22%20r=%221.9%22/></g><g%20fill='%23f6d79a'%20opacity='.85'><path%20d=%22M300%2071C300.0%2078.2%20301.8%2080.0%20309%2080C301.8%2080.0%20300.0%2081.8%20300%2089C300.0%2081.8%20298.2%2080.0%20291%2080C298.2%2080.0%20300.0%2078.2%20300%2071Z%22/><path%20d=%22M390%20319C390.0%20327.8%20392.2%20330.0%20401%20330C392.2%20330.0%20390.0%20332.2%20390%20341C390.0%20332.2%20387.8%20330.0%20379%20330C387.8%20330.0%20390.0%20327.8%20390%20319Z%22/><path%20d=%22M210%20512C210.0%20518.4%20211.6%20520.0%20218%20520C211.6%20520.0%20210.0%20521.6%20210%20528C210.0%20521.6%20208.4%20520.0%20202%20520C208.4%20520.0%20210.0%20518.4%20210%20512Z%22/><path%20d=%22M520%20103C520.0%20108.6%20521.4%20110.0%20527%20110C521.4%20110.0%20520.0%20111.4%20520%20117C520.0%20111.4%20518.6%20110.0%20513%20110C518.6%20110.0%20520.0%20108.6%20520%20103Z%22/></g></svg>");
+      background-size: 600px 600px;
+      background-repeat: repeat;
+    }
+
+    /* Hairline rule with a star node, used between sections. */
+    .gold-rule {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(227,169,63,.55), transparent);
+    }
+    .star-node { color: #e3a93f; }
+
+    /* Header: transparent over the hero, night-blue bar once scrolled. */
+    #siteHeader { transition: background-color .3s ease, border-color .3s ease, box-shadow .3s ease; }
+    #siteHeader .nav-link { color: rgba(247,244,236,.92); transition: color .2s ease; }
+    #siteHeader .nav-link:hover { color: #f6d79a; }
+    #siteHeader.is-scrolled {
+      background-color: rgba(10,26,51,.95);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(227,169,63,.3);
+      box-shadow: 0 12px 30px -14px rgba(6,16,31,.75);
+    }
+    #navLogo { height: 5rem; width: 5rem; transition: height .3s ease, width .3s ease; }
+    #siteHeader.is-scrolled #navLogo { height: 3.25rem; width: 3.25rem; }
+    @media (max-width: 768px) {
+      #navLogo { height: 4rem; width: 4rem; }
+      #siteHeader.is-scrolled #navLogo { height: 3rem; width: 3rem; }
+    }
+
+    ::selection { background: rgba(227,169,63,.35); }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 2px solid #e3a93f;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+
+/* 100vh on mobile is the LARGE viewport — taller than what's actually visible while
+   the browser's URL bar is showing, so the hero's bottom row sits off-screen and the
+   page jumps when the bar hides. svh tracks the small viewport instead. */
+@supports (min-height: 100svh) {
+  #top, #heroInner { min-height: 100svh; }
+}

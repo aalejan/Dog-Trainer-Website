@@ -1,0 +1,13 @@
+{
+  "name": "skill-tree-k9-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Skill Tree K9 marketing site",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles.css -o ./public/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
