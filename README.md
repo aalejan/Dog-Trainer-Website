@@ -2,6 +2,32 @@
 
 Static marketing site. Everything served lives in `public/`.
 
+## Pages
+
+| URL | File | Purpose |
+|---|---|---|
+| `/` | `public/index.html` | Narrative: hook, validation, authority, program summary, transformation, booking, about summary, FAQ |
+| `/program` | `public/program/index.html` | The Calm Companion Program in full |
+| `/about` | `public/about/index.html` | Steven's story |
+
+Clean URLs come from the `directory/index.html` layout, which every static host
+resolves without config. All three pages share the same header, footer, and
+`app.js`. If you edit the header or footer, edit it in all three files.
+
+Links and asset paths are **relative** (`program/`, `../styles.css`) rather than
+root-absolute, so the site works whether the web root is `public/` (how it
+deploys), the repo folder (a local preview of the whole project), or a
+subdirectory.
+
+### Previewing locally
+
+Serve it over HTTP — opening `index.html` from disk with `file://` will not
+follow `program/` to `program/index.html`:
+
+```bash
+python3 -m http.server 8000 --directory public   # then open http://localhost:8000
+```
+
 ## CSS build
 
 Styles are compiled with the Tailwind CLI — the site no longer loads the
